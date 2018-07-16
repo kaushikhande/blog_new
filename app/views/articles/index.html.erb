@@ -2,10 +2,13 @@
 <%= link_to 'New Article', new_article_path, class: "link_button" %>
 <br>
 <br>
+<br>
 <table>
     <tr>
         <th>Title:</th>
         <th>Text:</th>
+        <th></th>
+        <th></th>
         <th></th>
     </tr>
     <% @articles.each do |article|%>
@@ -17,7 +20,7 @@
             <td><%= link_to 'Destroy', article_path(article), method: :delete, data: {confirm:'Are you sure?'}, class: "link_button" %></td>
         </tr>
         <tr></tr>
-         <tr></tr>
+        <tr></tr>
     
     <% end %>
     
